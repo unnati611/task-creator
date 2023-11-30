@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to_do_list</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page2_heading">
+      <h2>Hello <span id="name"></span>, Lets start with new task</h2>
+    </div>
+    <div class="maincontent_page2">
+      <div class="createlist">
+        <div class="addtask">
+          <button onclick="addtask()">+ &nbsp; Add task</button>
+        </div>
+        <div class="currenttasklist">
+          <button onclick="currenttask()">Current task list</button>
+        </div>
+      </div>
+
+      <div class="listdetail">
+        <div class="createtask" id="createtask">
+          <h3>
+            Task Name:
+            <span><input id="taskname" class="tname" type="text" /></span>
+          </h3>
+          <!-- <h3>
+            Date
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+            <span><input value="2014-12-29" type="date" id="date" /></span>
+          </h3> -->
+          <h3>
+            Start Time&nbsp;&nbsp;:<span
+              ><input type="time" id="start" /><span
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End time:<span
+                  ><input type="time" placeholder="9am" id="end" /></span></span
+            ></span>
+          </h3>
+          <h3>
+            Description:<span
+              ><input class="tname" type="text" id="detail"
+            /></span>
+          </h3>
+          <button onclick="addnewtask()" id="createbtn">Create task</button>
+        </div>
+        <div class="currenttaskdetails" id="currenttaskdetails">
+          <!-- <div class="ctask" id="ctask1">
+            <h3><input type="checkbox" /> To do list</h3>
+            <button class="editbtn">Edit</button>
+            <button>delet</button>
+          </div> -->
+          <!-- <div class="ctask" id="ctask1">
+            <h3><input type="checkbox" /> To do list</h3>
+            <button class="editbtn">Edit</button>
+            <button>delet</button>
+          </div>
+          <div class="ctask" id="ctask1">
+            <h3><input type="checkbox" /> To do list</h3>
+            <button class="editbtn">Edit</button>
+            <button>delet</button>
+          </div>
+          <div class="ctask" id="ctask1">
+            <h3><input type="checkbox" /> To do list</h3>
+            <button class="editbtn">Edit</button>
+            <button>delet</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+  </body>
+</html>
