@@ -319,7 +319,9 @@ input[type=date]::-webkit-datetime-edit-year-field {
 }
 
 .viewdiv {
-    display: block;
+    flex-direction: column;
+    justify-self: center;
+    display: flex;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -332,9 +334,10 @@ input[type=date]::-webkit-datetime-edit-year-field {
 }
 
 .model_content {
+    align-items: center;
+    flex-direction: column;
     background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
+    margin: auto;
     border: 1px solid #888;
     width: 80%;
     color: black;
@@ -342,4 +345,26 @@ input[type=date]::-webkit-datetime-edit-year-field {
     justify-content: space-evenly;
     color: #3b63f3;
     border-radius: 4px;
+}
+
+.model_content h3 {
+    padding: 0;
+    margin: 10px;
+
+}
+
+.model_content button {
+    font-size: 20px;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #2f6e9f, #2D5CFE);
+    color: white;
+    padding: 5px;
+    width: 200px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: 300; */
+    text-align: center;
+    /* margin-left: 250px; */
 }

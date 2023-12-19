@@ -18,7 +18,7 @@ function addnewtask() {
   let StarTtime = document.getElementById("start").value;
   let EndTime = document.getElementById("end").value;
   let newtask = document.getElementById("taskname");
-  let description = document.getElementById("detail");
+  let description = document.getElementById("detail").value;
   let Date = document.getElementById("date");
   newtask = newtask.value;
   newtask = newtask.charAt(0).toUpperCase() + newtask.slice(1);
@@ -28,7 +28,6 @@ function addnewtask() {
     alert("please enter the value of Task name, Start time,endtime");
     return;
   }
-  debugger;
   document.getElementById("createtask").style.display = "none";
   document.getElementById("currenttaskdetails").style.display = "block";
   document.getElementById("currenttaskdetails").innerHTML = "";
@@ -114,7 +113,7 @@ function viewtask(v) {
   let details = document.createElement("h3");
   details.className = "h3";
   details.id = `detail-${currentidnumber}`;
-  details.innerHTML = "detail :" + data[currentidnumber].description;
+  details.innerHTML = "detail :" + data[currentidnumber].detail;
   model_content.appendChild(details);
   let closebtn = document.createElement("button");
   closebtn.innerHTML = "close";
